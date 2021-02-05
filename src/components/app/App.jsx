@@ -1,12 +1,10 @@
 import React from 'react';
-import Request from '../request/Request';
-import Results from '../results/Results';
+import RESTy from '../../conatiners/RESTy';
 
 export default function App() {
   return (
     <>
-      <Request />
-      <Results />
+      <RESTy/>
     </>
   );
 }

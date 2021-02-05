@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList component renders a list of histories 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <div
+        class="SingleHistory"
+      >
+        <p>
+          www.url.com
+        </p>
+        <p>
+          GET
+        </p>
+      </div>
+    </li>
+    <li>
+      <div
+        class="SingleHistory"
+      >
+        <p>
+          www.url.com
+        </p>
+        <p>
+          GET
+        </p>
+      </div>
+    </li>
+    <li>
+      <div
+        class="SingleHistory"
+      >
+        <p>
+          www.url.com
+        </p>
+        <p>
+          GET
+        </p>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

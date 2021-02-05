@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Results = ({ results }) => (
-  <textarea cols="50" rows="25" placeholder="Results" value={results}/>
+  <pre>
+    {JSON.stringify(results, null, 2)}
+  </pre>
 );
 
 Results.propTypes = {
