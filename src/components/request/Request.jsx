@@ -7,20 +7,20 @@ const Request = ({ onSubmit, handleChange }) => (
     <form onSubmit={onSubmit} className={styles.Request}>
       <input type="url" placeholder="https://" onChange={handleChange}/>
       <div>
-        <input type="radio" value="GET" id="get" name="method"/>
+        <input type="radio" value="GET" id="get" name="method" onChange={handleChange}/>
         <label htmlFor="get">GET</label>
-        <input type="radio" value="POST" id="post" name="method"/>
+        <input type="radio" value="POST" id="post" name="method" onChange={handleChange}/>
         <label htmlFor="post">POST</label>
-        <input type="radio" value="PUT" id="put" name="method"/>
+        <input type="radio" value="PUT" id="put" name="method" onChange={handleChange} />
         <label htmlFor="put">PUT</label>
-        <input type="radio" value="PATCH" id="patch" name="method"/>
+        <input type="radio" value="PATCH" id="patch" name="method" onChange={handleChange}/>
         <label htmlFor="patch">PATCH</label>
-        <input type="radio" value="DELETE" id="delete" name="method"/>
+        <input type="radio" value="DELETE" id="delete" name="method" onChange={handleChange}/>
         <label htmlFor="delete">DELETE</label>
       </div>
-      <input type="submit" value="Let's Go!"/>
+      <button>Lets Go!</button>
+      <textarea cols="40" rows="10"/>
     </form>
-    <textarea cols="40" rows="10"/>
   </>
 );
 

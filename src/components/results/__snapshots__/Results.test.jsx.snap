@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results component renders a list of histories 1`] = `
+<DocumentFragment>
+  <pre>
+    [
+  {}
+]
+  </pre>
+</DocumentFragment>
+`;
