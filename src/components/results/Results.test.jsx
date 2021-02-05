@@ -5,9 +5,9 @@ import Results from './Results';
 
 describe('Results component', () => {
   afterEach(() => cleanup());
-  it('renders a list of histories', () => {
+  it('renders results from api call', () => {
     const { asFragment } = render(<Results
-      results={[{}]}
+      response={[{}]}
     />);
     expect(asFragment()).toMatchSnapshot();
   });

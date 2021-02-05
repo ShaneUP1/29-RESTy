@@ -9,7 +9,7 @@ export const fetchEndpoints = (url, method, body) => {
   else if(method === 'PUT' || method === 'POST') {
     return fetch(url, {
       method: `${method}`,
-      body: `${body}`,
+      body,
       headers: {
         'Content-Type': 'application/json'
       }

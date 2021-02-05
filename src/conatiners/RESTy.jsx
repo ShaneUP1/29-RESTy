@@ -8,7 +8,7 @@ export default class RESTy extends Component {
     method: '',
     url: '',
     body: '',
-    response: ''
+    response: []
   }
   
   handleSubmit = (event) => {

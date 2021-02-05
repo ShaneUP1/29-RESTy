@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Results = ({ response }) => (
-  <pre>
+  <pre data-testid="results">
     {JSON.stringify(response, null, 2)}
   </pre>
 );
 
 Results.propTypes = {
-  response: PropTypes.arrayOf(PropTypes.object).isRequired
+  response: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired
 };
 
 export default Results;
