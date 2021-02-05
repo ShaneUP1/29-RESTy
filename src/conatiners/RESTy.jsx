@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HistoryList from '../components/history/HistoryList';
 import Request from '../components/request/Request';
 import Results from '../components/results/Results';
 import { fetchEndpoints } from '../services/apiCalls';
@@ -8,7 +9,8 @@ export default class RESTy extends Component {
     method: '',
     url: '',
     body: '',
-    response: []
+    response: [],
+    histories: []
   }
   
   handleSubmit = (event) => {
@@ -27,7 +29,8 @@ export default class RESTy extends Component {
     return (
       <>
         <Request onSubmit={this.handleSubmit} onChange={this.handleChange} url={this.url}/>
-        <Results response={this.state.response}/>  
+        <Results response={this.state.response}/>
+        <HistoryList histories={this.state.histories}/>
       </>
     );
   }

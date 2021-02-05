@@ -18,7 +18,7 @@ describe('RESTy container', () => {
     });
 
     return waitFor(() => {
-      expect(screen.getByTestId('results')).not.toBeEmptyDOMElement;
+      expect(screen.getByTestId('results')).not.toBeEmptyDOMElement();
     });
   });
 });
