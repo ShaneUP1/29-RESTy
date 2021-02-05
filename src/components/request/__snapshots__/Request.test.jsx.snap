@@ -6,6 +6,7 @@ exports[`Request component renders a list of histories 1`] = `
     class="Request"
   >
     <input
+      name="url"
       placeholder="https://"
       type="url"
     />
@@ -71,6 +72,7 @@ exports[`Request component renders a list of histories 1`] = `
     </button>
     <textarea
       cols="40"
+      name="body"
       rows="10"
     />
   </form>

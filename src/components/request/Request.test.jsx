@@ -7,7 +7,7 @@ describe('Request component', () => {
   afterEach(() => cleanup());
   it('renders a list of histories', () => {
     const { asFragment } = render(<Request
-      onSubmit={jest.fn()} handleChange={() => {}}
+      onSubmit={jest.fn()} onChange={() => {}}
     />);
     expect(asFragment()).toMatchSnapshot();
   });

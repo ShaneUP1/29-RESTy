@@ -5,7 +5,7 @@ import styles from './Request.css';
 const Request = ({ onSubmit, onChange }) => (
   <>
     <form onSubmit={onSubmit} className={styles.Request}>
-      <input type="url" placeholder="https://" onChange={onChange}/>
+      <input type="url" placeholder="https://" name="url" onChange={onChange}/>
       <div>
         <input type="radio" value="GET" id="get" name="method" onChange={onChange}/>
         <label htmlFor="get">GET</label>
@@ -19,14 +19,14 @@ const Request = ({ onSubmit, onChange }) => (
         <label htmlFor="delete">DELETE</label>
       </div>
       <button>Lets Go!</button>
-      <textarea cols="40" rows="10" onChange={onChange}/>
+      <textarea cols="40" rows="10" name="body" onChange={onChange}/>
     </form>
   </>
 );
 
 Request.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
 };
 
 export default Request;
