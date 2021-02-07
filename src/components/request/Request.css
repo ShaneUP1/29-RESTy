@@ -1,7 +1,11 @@
 .Request {
-  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 60%;
 
-  input {
+  input[type="radio"] {
     margin: 5px;
     cursor: pointer;
   }
@@ -12,7 +16,12 @@
   }
 
   button {
+    display: block;
     width: 25%;
     margin-bottom: 5px;
+  }
+
+  textarea {
+    width: 100%;
   }
 }

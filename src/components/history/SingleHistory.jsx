@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './SingleHistory.css';
 
 const SingleHistory = ({ url, method }) => (
-  <div className={styles.SingleHistory}>
+  <div className={styles.SingleHistory} >
     <p>{url}</p>
     <p>{method}</p>
   </div>

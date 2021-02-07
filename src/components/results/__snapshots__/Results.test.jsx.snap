@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Results component renders a list of histories 1`] = `
-<DocumentFragment>
-  <pre
-    data-testid="results"
-  >
-    [
-  {}
-]
-  </pre>
-</DocumentFragment>
-`;
-
 exports[`Results component renders results from api call 1`] = `
 <DocumentFragment>
   <pre
