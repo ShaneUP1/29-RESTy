@@ -21,7 +21,6 @@ export default class RESTy extends Component {
   };
 
   handleChange = ({ target }) => {
-    console.log(target.value);
     this.setState({ [target.name]: target.value });
   };
 
